@@ -13,10 +13,24 @@ import { PostSkeletonComponent } from './components/posts/post-skeleton/post-ske
 import { CommentsSkeletonComponent } from './components/posts/comments-skeleton/comments-skeleton.component';
 import { NavbarSkeletonComponent } from './components/navbar/navbar-skeleton/navbar-skeleton.component';
 
-
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, PostsComponent, TruncatePipe, PostDetailsComponent, NotFoundComponent, PostSkeletonComponent, CommentsSkeletonComponent, NavbarSkeletonComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule ,  NgxSkeletonLoaderModule,],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    PostsComponent,
+    TruncatePipe,
+    PostDetailsComponent,
+    NotFoundComponent,
+    PostSkeletonComponent,
+    CommentsSkeletonComponent,
+    NavbarSkeletonComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    NgxSkeletonLoaderModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

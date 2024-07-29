@@ -1,14 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, OnInit } from '@angular/core';
 
-
 @Injectable({
   providedIn: 'root',
 })
 export class PostsService {
   constructor(private httpClient: HttpClient) {}
-
- 
 
   getUsersPost(userId: number) {
     return this.httpClient
@@ -16,9 +13,9 @@ export class PostsService {
 `);
   }
 
-  getComments(postId: number){
-    return this.httpClient.get(`https://jsonplaceholder.typicode.com/comments?postId=${postId}`)
+  getComments(postId: number) {
+    return this.httpClient.get(
+      `https://jsonplaceholder.typicode.com/comments?postId=${postId}`
+    );
   }
-
-  
 }
